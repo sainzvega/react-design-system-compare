@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "compute-scroll-into-view": "^1.0.11",
+    "proptypes": "^1.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
@@ -10,8 +13,9 @@
     "styled-system": "^5.1.2"
   },
   "scripts": {
-    "start": "npm run build:style && react-scripts start",
     "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "storybook": "npm run build:style && start-storybook -p 6006",
+    "storybook:build": "npm run build:style && build-storybook",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -31,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "@storybook/react": "^5.2.3",
     "autoprefixer": "^9.6.4",
     "postcss-cli": "^6.1.3",
     "tailwindcss": "^1.1.2"
