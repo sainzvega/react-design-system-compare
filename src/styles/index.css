@@ -1,0 +1,7 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* We can add overrides here like .btn or something*/
