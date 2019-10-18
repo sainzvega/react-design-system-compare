@@ -16,3 +16,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.test-class {
+  color: burlywood !important;
+}

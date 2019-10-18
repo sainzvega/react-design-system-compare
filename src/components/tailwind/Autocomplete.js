@@ -9,8 +9,8 @@ import React, {
 } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { scrollNodeIntoView } from "../../_utils/scrollNodeIntoView";
-import "../../../styles/tailwind.css";
+import { scrollNodeIntoView } from "../_utils/scrollNodeIntoView";
+import "../../styles/tailwind.css";
 
 function wrapEvent(overrideHandler, defaultHandler) {
   return event => {
