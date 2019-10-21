@@ -3,11 +3,11 @@ import { storiesOf } from "@storybook/react";
 import { Button } from "./Button";
 import "../../styles/tailwind.css";
 
-storiesOf("Button || tailwind", module).add("default", () => (
-  <Button>This is a Button</Button>
-));
+storiesOf("Button || tailwind", module)
+  .add("default", () => <Button>This is a Button</Button>)
+  .add("text color", () => <Button color="red-500">This is a Button</Button>);
 // .add("font size", () => <Button textSize="sm">This is a Button</Button>)
-// .add("text color", () => <Button color="red-500">This is a Button</Button>)
+
 // .add("background color", () => <Button bg="red-700">This is a Button</Button>)
 // .add("padding", () => <Button px="5">This is a Button</Button>)
 // .add("rounded full", () => <Button rounded="full">This is a Button</Button>)

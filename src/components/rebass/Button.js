@@ -7,9 +7,11 @@ export const Button = props => (
     color="white"
     bg="teals.4"
     fontSize="2"
-    radius={1}
-    px={3}
-    py={4}
+    px="3"
+    py="4"
+    sx={{
+      borderRadius: 2 // TODO: why cant this work as a default prop
+    }}
     {...props}
   />
 );
