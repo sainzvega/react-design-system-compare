@@ -21,6 +21,7 @@
     "theme-ui": "^0.2.44"
   },
   "scripts": {
+    "start": "npm run storybook",
     "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
     "storybook": "npm run build:style && start-storybook -p 6006",
     "storybook:build": "npm run build:style && build-storybook",
