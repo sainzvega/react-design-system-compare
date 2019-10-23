@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { Button } from "./Button";
-import { ThemeProvider } from "./ThemeProvider";
+import { EmotionThemeProvider as ThemeProvider } from "./EmotionThemeProvider";
 
 const Decorator = storyFn => <ThemeProvider>{storyFn()}</ThemeProvider>;
 
