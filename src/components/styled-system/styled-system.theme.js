@@ -192,73 +192,21 @@ export const theme = {
   ],
   letterSpacings: ["-0.05em", "-0.025em", "0", "0.025em", "0.05em", "0.1em"], // NOTE: these might be worth aliasing as variants
   lineHeights: ["1", "1.25", "1.375", "1.5", "1.625", "2"], // NOTE: these might be worth aliasing as variants
-  zIndices: ["auto", "0", "10", "20", "30", "40", "50"]
-  // NOTE: styled-system does not seem to have "cursor" theming and must be accomplished through the use of variants
-  //   cursor: {
-  //     auto: "auto",
-  //     default: "default",
-  //     pointer: "pointer",
-  //     wait: "wait",
-  //     text: "text",
-  //     move: "move",
-  //     "not-allowed": "not-allowed"
-  //   },
-  // NOTE: styled-system does not seem to have "flex" theming and must be accomplished through the use of variants
-  //   flex: {
-  //     "1": "1 1 0%",
-  //     auto: "1 1 auto",
-  //     initial: "0 1 auto",
-  //     none: "none"
-  //   },
-  //   flexGrow: {
-  //     "0": "0",
-  //     default: "1"
-  //   },
-  //   flexShrink: {
-  //     "0": "0",
-  //     default: "1"
-  //   },
-  // NOTE: styled-system does not seem to have "listStyleType" theming and must be accomplished through the use of variants
-  //   listStyleType: {
-  //     none: "none",
-  //     disc: "disc",
-  //     decimal: "decimal"
-  //   },
-  //
-  //   objectPosition: {
-  //     bottom: "bottom",
-  //     center: "center",
-  //     left: "left",
-  //     "left-bottom": "left bottom",
-  //     "left-top": "left top",
-  //     right: "right",
-  //     "right-bottom": "right bottom",
-  //     "right-top": "right top",
-  //     top: "top"
-  //   },
-  //   placeholderColor: theme => theme("colors"),
-  //order: {
-  //     first: "-9999",
-  //     last: "9999",
-  //     none: "0",
-  //     "1": "1",
-  //     "2": "2",
-  //     "3": "3",
-  //     "4": "4",
-  //     "5": "5",
-  //     "6": "6",
-  //     "7": "7",
-  //     "8": "8",
-  //     "9": "9",
-  //     "10": "10",
-  //     "11": "11",
-  //     "12": "12"
-  //   },
-  //opacity: {
-  //     "0": "0",
-  //     "25": "0.25",
-  //     "50": "0.5",
-  //     "75": "0.75",
-  //     "100": "1"
-  //   },
+  zIndices: ["auto", "0", "10", "20", "30", "40", "50"],
+  buttons: {
+    primary: {
+      color: "white",
+      bg: "reds.4",
+      "&:hover": {
+        bg: "reds.6"
+      }
+    },
+    secondary: {
+      color: "white",
+      bg: "blues.4",
+      "&:hover": {
+        bg: "blues.6"
+      }
+    }
+  }
 };
